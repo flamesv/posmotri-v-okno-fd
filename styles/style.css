@@ -270,6 +270,7 @@ ol {
 .search-form__label:hover .search-form__label-text {
   cursor: pointer;
   text-decoration: underline;
+  text-decoration-skip-ink: none;
 }
 
 .button {
