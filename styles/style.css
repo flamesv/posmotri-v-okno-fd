@@ -286,6 +286,7 @@ ol {
 
 .button:hover {
   text-decoration: underline;
+  text-decoration-skip-ink: none;
   cursor: pointer;
 }
 
