@@ -252,18 +252,18 @@ ol {
   height: 19px;
   border: 1px solid white;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after,
 .search-form__checkbox:active + .search-form__pseudo-checkbox::after {
   content: '';
-  position: absolute;
   background-color: #fff;
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: relative;
+  inset: 1px;
 }
 
 .search-form__label:hover .search-form__label-text {
