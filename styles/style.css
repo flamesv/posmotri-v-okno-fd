@@ -225,6 +225,7 @@ ol {
   border-bottom: 1px solid #fff;
   background-color: transparent;
   padding-left: 0;
+  color: #fff;
 }
 
 .search-form__textfield:focus {
