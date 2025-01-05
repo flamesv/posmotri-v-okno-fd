@@ -81,7 +81,7 @@ ol {
   gap: 30px;
 }
 
-.content__list-item:hover {
+.content__card-link:hover {
   text-decoration: underline;
   text-underline-offset: auto;
   text-decoration-skip-ink: none;
@@ -103,7 +103,7 @@ ol {
   grid-area: details;
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 18px;
   min-height: 534px;
 }
 
@@ -123,6 +123,10 @@ ol {
   display: flex;
   flex-direction: row;
   align-items: start;
+}
+
+.content__card-link:active {
+  text-decoration: none;
 }
 
 .content__card-link_current .content__video-card,
@@ -184,6 +188,7 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .search-form {
@@ -219,8 +224,8 @@ ol {
   font-weight: 400;
   font-size: 18px;
   min-width: 225px;
-  border-right: 0;
-  border-left: 0;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   background-color: transparent;
@@ -230,6 +235,10 @@ ol {
 
 .search-form__textfield:focus {
   outline: none;
+}
+
+.search-form__textfield:active {
+  border: 1px solid #fff;
 }
 
 .search-form__textfield::placeholder {
@@ -242,7 +251,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -281,7 +290,7 @@ ol {
   text-align: center;
   border: 1px solid #fff;
   background-color: transparent;
-  max-height: 34px;
+  min-height: 34px;
 }
 
 .button:hover {
@@ -301,6 +310,7 @@ ol {
 
 .button:active {
   background-color: #545050;
+  text-decoration: none;
 }
 
 .search-form__submit-button {
@@ -311,5 +321,4 @@ ol {
 
 .more-button {
   width: 100%;
-  min-height: 34px;
 }
