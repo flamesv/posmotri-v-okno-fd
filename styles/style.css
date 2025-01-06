@@ -130,7 +130,7 @@ ol {
 }
 
 .content__card-link_current .content__video-card,
-.content__list-item:active .content__video-card {
+.content__card-link:active .content__video-card {
   background-color: #545050;
 }
 
